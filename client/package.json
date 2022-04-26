@@ -1,0 +1,10 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Henry Burgess",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.1"
+  }
+}
