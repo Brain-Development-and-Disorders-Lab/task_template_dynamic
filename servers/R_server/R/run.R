@@ -9,7 +9,7 @@ library(RestRserve)
 # Define constants
 endpoint <- "/task/intentions" # URL path
 port <- 8000 # Port for server operation
-data_folder <- "data" # Directory for storing generated data
+data_path <- "data" # Directory for storing generated data
 
 # Create a new application with CORS middleware
 application <- Application$new(
@@ -27,8 +27,8 @@ setup <- function() {
   }
 
   # Create a data folder to store any generated data
-  if (dir.exists(data_folder) == FALSE) {
-    dir.create(data_folder)
+  if (dir.exists(data_path) == FALSE) {
+    dir.create(data_path)
   }
 
   # Set the 'server' log level and namespace
