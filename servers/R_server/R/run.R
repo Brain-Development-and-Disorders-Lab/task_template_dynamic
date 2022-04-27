@@ -7,8 +7,9 @@ library(jsonlite)
 library(RestRserve)
 
 # Define constants
-endpoint <- "/task/intentions"
-port <- 8000
+endpoint <- "/task/intentions" # URL path
+port <- 8000 # Port for server operation
+data_folder <- "data" # Directory for storing generated data
 
 # Create a new application with CORS middleware
 application <- Application$new(
@@ -25,9 +26,9 @@ setup <- function() {
     dir.create("logs")
   }
 
-  # Create a data folder to store participant data
-  if (dir.exists("participants") == FALSE) {
-    dir.create("participants")
+  # Create a data folder to store any generated data
+  if (dir.exists(data_folder) == FALSE) {
+    dir.create(data_folder)
   }
 
   # Set the 'server' log level and namespace
