@@ -1,3 +1,5 @@
+[Home](../index.md) > Setup > SSH connection
+
 # Setup - SSH connection
 
 ## Connecting with a certificate

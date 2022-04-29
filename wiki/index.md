@@ -2,6 +2,8 @@
 
 This wiki guide describes the entire process to setup and deploy a dynamic task using the Gorilla platform and a cloud platform such as AWS, Azure, or GCP. This guide assumes some knowledge of the command line.
 
+---
+
 ## Contents
 
 1. Setup
@@ -10,7 +12,7 @@ This wiki guide describes the entire process to setup and deploy a dynamic task 
     - [Installation of server](setup/installing_server.md)
 
 2. Deployment
-    - [Starting server](deployment/starting_server.md)
+    - [Starting the server](deployment/starting_server.md)
     - [Installation and configuration of Nginx](deployment/configure_nginx.md)
     - [Installation and configuration of Gorilla](deployment/configure_gorilla.md)
 
