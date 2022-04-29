@@ -2,6 +2,8 @@
 
 > Repository containing configurations and endpoint implementations for dynamic calculations used by online cognitive tasks.
 
+Comprehensive documentation describing how to install and configure the contents of this repository can be found in the [wiki](wiki/index.md).
+
 ## Description
 
 In order to perform advanced computations in a cognitive task, it is often easier to use a specialised language such as Python or R. When operating a cognitive task online, the task is typically a 'static' task that has all behaviour pre-defined. This repository implements a small JavaScript library that sends requests to a remote server that is able to perform advanced computations. Complementing this library, two pre-configured server endpoints are implemented using R and Python. These servers are capable of receiving data from the JavaScript task, executing a function using the received data, and returning a response to the task containing the computed data.
