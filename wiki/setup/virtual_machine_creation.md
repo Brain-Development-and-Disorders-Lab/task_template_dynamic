@@ -22,4 +22,4 @@ mv <certificate> ~/.ssh/
 
 ## Public IP address
 
-After the virtual machine has been instantiated, the cloud platform will allocate an IP address to the virtual machine. This is the address that you will use to initially access the virtual machine from your computer. Store this IP address, as it will be required to connect to the virtual machine and for future configuration.
+After the virtual machine has been instantiated, the cloud platform will allocate an IP address to the virtual machine. This is the address that you will use to access the virtual machine from your computer. Store this IP address, as it will be required to connect to the virtual machine and for future configuration.
