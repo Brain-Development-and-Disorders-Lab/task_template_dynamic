@@ -16,8 +16,11 @@ This wiki guide describes the entire process to setup and deploy a dynamic task 
     - [Installation and configuration of Nginx](deployment/configure_nginx.md)
     - [Installation and configuration of Gorilla](deployment/configure_gorilla.md)
 
-3. Troubleshooting
-    - [Testing the server with Postman](troubleshooting/requests_with_postman.md)
+3. Usage
+    - [Sending requests](usage/sending_requests.md)
+
+4. Troubleshooting
+    - [Testing the server with Postman](troubleshooting/testing_with_postman.md)
     - [CORS issues](troubleshooting/cors.md)
 
-4. [FAQs](faqs.md)
+5. [FAQs](faqs.md)
