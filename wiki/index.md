@@ -17,10 +17,15 @@ This wiki guide describes the entire process to setup and deploy a dynamic task 
     - [Installation and configuration of Gorilla](deployment/configure_gorilla.md)
 
 3. Usage
-    - [Sending requests](usage/sending_requests.md)
+    - [Client integration (incomplete)](usage/client_integration.md)
+    - [Sending requests (incomplete)](usage/sending_requests.md)
 
 4. Troubleshooting
-    - [Testing the server with Postman](troubleshooting/testing_with_postman.md)
-    - [CORS issues](troubleshooting/cors.md)
+    - [Testing the server with Postman (incomplete)](troubleshooting/testing_with_postman.md)
+    - [CORS issues (incomplete)](troubleshooting/cors.md)
 
-5. [FAQs](faqs.md)
+5. [FAQs (incomplete)](faqs.md)
+
+---
+
+Questions? Suggestions? Please reach out or file a new issue under this repository.
