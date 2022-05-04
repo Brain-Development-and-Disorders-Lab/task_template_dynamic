@@ -2,7 +2,7 @@
 
 > Repository containing configurations and endpoint implementations for dynamic calculations used by online cognitive tasks.
 
-Comprehensive documentation describing how to install and configure the contents of this repository can be found in the [wiki](wiki/index.md).
+Comprehensive documentation describing how to install and configure the contents of this repository can be found in the [wiki](https://github.com/Brain-Development-and-Disorders-Lab/template_task_dynamic/wiki).
 
 ## Description
 
