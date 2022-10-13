@@ -1,9 +1,0 @@
-Package: R_Server
-Title: R Server for Cognitive Tasks
-Description: Implementation of an endpoint and request handler for computations required for dynamic cognitive tasks.
-Author: Henry Burgess <henry.burgess@wustl.edu>
-Version: 1.0.0
-License: MIT
-Imports: logger,
-         jsonlite,
-         RestRserve
