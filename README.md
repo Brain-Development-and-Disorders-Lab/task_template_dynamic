@@ -1,4 +1,4 @@
-# Dynamic Tasks
+# Dynamic Tasks - Deployable Server Container
 
 > Repository containing configurations and endpoint implementations for dynamic calculations used by online cognitive tasks.
 
@@ -6,18 +6,15 @@ Comprehensive documentation describing how to install and configure the contents
 
 ## Description
 
-In order to perform advanced computations in a cognitive task, it is often easier to use a specialised language such as Python or R. When operating a cognitive task online, the task is typically a 'static' task that has all behaviour pre-defined. This repository implements a small JavaScript library that sends requests to a remote server that is able to perform advanced computations. Complementing this library, two pre-configured server endpoints are implemented using R and Python. These servers are capable of receiving data from the JavaScript task, executing a function using the received data, and returning a response to the task containing the computed data.
-
-## Contents
-
-The contents of this repository are divided across two folders representing the two roles required for this technique to function: the `client/` (JavaScript / TypeScript) and the `servers/` (R or Python).
+In order to perform advanced computations in a cognitive task, it is often easier to use a specialised language such as R. When operating a cognitive task online, the task is typically a 'static' task that has all behaviour pre-defined. A pre-configured server container is implemented using R.
 
 ## Usage
 
-### Usage: Client
+Parameters for the R server must be configured inside `config.yml`:
 
-The client is implemented to export a single `Client` class that acts as an interface to interact with requests to the remote server. The client can send and receive requests. It does not perform any significant data validation, as the researchers requirements will likely differ regarding the exact data specification.
+- `endpoint`: Define the URL segment that the server will listen to.
+- `custom_function`: Path to the R script containing the `custom_function` function.
+- `port`: Port that the server will listen to the URL segment from.
+- `output`: Local path where logs and participant data will be stored. Directory will be created if it doesn't exist.
 
-### Usage: Server
-
-Two servers are implemented: one in Python, and one in R. Only one server is required, the server should be selected based on the language the computation is implemented in. The source code for each server highlights the location to call the function implemented for the computations.
+The `custom_function` function must be implemented within `custom_function.R`. This function must accept one parameter, `parameters`, which will always contain the contents of a request sent to the server. The function must return another set of parameters, which will be passed back by the server to the client as a response.

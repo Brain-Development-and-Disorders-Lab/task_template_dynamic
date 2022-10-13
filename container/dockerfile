@@ -1,7 +1,8 @@
-FROM r-base:4.2.0
+# Install, configure, and start RestRserve
+FROM r-base:4.2.0 AS server
 
 ENV R_FORGE_PKGS Rserve
-ENV R_CRAN_PKGS Rcpp R6 uuid checkmate mime jsonlite digest config logger
+ENV R_CRAN_PKGS Rcpp R6 uuid checkmate mime jsonlite digest config glue logger
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libssl-dev libjemalloc-dev wget && \
@@ -16,11 +17,12 @@ RUN R CMD INSTALL /RestRserve*.tar.gz && \
 
 WORKDIR /
 
-ENV LD_PRELOAD /usr/lib/x86_64-linux-gnu/libjemalloc.so
-
 EXPOSE 8000
 
-# Copy R scripts and start the server
+ENV LD_PRELOAD /usr/lib/x86_64-linux-gnu/libjemalloc.so
+
+# Copy R scripts
 ADD /server /server
 WORKDIR /server
+
 CMD ["Rscript" , "start.R"]
