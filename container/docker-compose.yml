@@ -1,12 +1,12 @@
 version: "0.1"
 services:
-  rserver:
+  backend:
     build: .
-    expose:
-      - 8000
+    ports:
+      - 8000:8000
     volumes:
       - ./server:/server
-  nginx:
+  proxy:
     image: "nginx"
     ports:
       - 80:80
