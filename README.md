@@ -18,3 +18,7 @@ Parameters for the R server must be configured inside `config.yml`:
 - `output`: Local path where logs and participant data will be stored. Directory will be created if it doesn't exist.
 
 The `custom_function` function must be implemented within `custom_function.R`. This function must accept one parameter, `parameters`, which will always contain the contents of a request sent to the server. The function must return another set of parameters, which will be passed back by the server to the client as a response.
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
