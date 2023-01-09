@@ -1,12 +1,12 @@
-# Dynamic Tasks - Deployable Server Container
+# Dynamic Cognitive Task Computations
 
-> Repository containing configurations and endpoint implementations for dynamic calculations used by online cognitive tasks.
+> This repository contains a containerized 'template' that starts an R-based server and a proxy service allowing for streamlined local and remote deployment of an API endpoint.
 
-Comprehensive documentation describing how to install and configure the contents of this repository can be found in the [wiki](https://github.com/Brain-Development-and-Disorders-Lab/template_task_dynamic/wiki).
+Comprehensive documentation describing how to customize and deploy the template can be found in the [wiki](https://github.com/Brain-Development-and-Disorders-Lab/dynamic_cognitive_task/wiki).
 
 ## Description
 
-In order to perform advanced computations in a cognitive task, it is often easier to use a specialised language such as R. When operating a cognitive task online, the task is typically a 'static' task that has all behaviour pre-defined. A pre-configured server container is implemented using R.
+Given that most behavioral and cognitive testing is moving online, it is necessary to develop computational tools that allow interactive computations within the task itself. In order to perform advanced computations in a cognitive task, it is often easier to use a specialised language such as R. When operating a cognitive task online, the task is typically a 'static' task that has all behaviour pre-defined. A pre-configured server container is implemented using R.
 
 ## Usage
 
