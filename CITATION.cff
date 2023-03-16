@@ -1,14 +1,16 @@
-cff-version: 1.2.0
+cff-version: 1.0.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Lisa"
-  given-names: "Mona"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Bot"
-  given-names: "Hew"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "My Research Software"
-version: 2.0.4
-doi: 10.0000/code.1234
-date-released: 2022-02-02
-url: "https://github.com/github/linguist"
+- family-names: "Burgess"
+  given-names: "Henry"
+  orcid: "https://orcid.org/0000-0002-3481-952X"
+- family-names: "Barnby"
+  given-names: "Joseph M."
+- family-names: "Dayan"
+  given-names: "Peter"
+- family-names: "Richards"
+  given-names: "Linda J."
+title: "Dynamic Cognitive Task Server Template"
+version: 1.0.0
+date-released: 2023-03-16
+url: "https://github.com/Brain-Development-and-Disorders-Lab/task_template_dynamic"
