@@ -1,10 +1,10 @@
-# Dynamic Cognitive Task Server Template
+# Realizing Dynamic Cognitive Tasks with Cloud-based Computation
 
-> How can we administer online cognitive tasks that require computations
-that are too sophisticated to run in browsers or that demand interaction
-between multiple participants?
+> How can we expand the computational capabilities of online cognitive tasks to realize dynamic task behavior?
 
-This repository contains a containerized 'template' of a task-server architecture that receives participant task input to an R-based server performs advanced computations before returning an output to the task used to define dynamic task behavior.
+<img src="Burgess_etal_CNS_2023_Poster.png">
+
+This repository implements a containerized 'template' of an architecture that defers advanced computations from an online cognitive task to a cloud server configured to perform these computations.
 
 Comprehensive documentation describing how to customize and deploy this template can be found in the [wiki](https://github.com/Brain-Development-and-Disorders-Lab/task_template_dynamic/wiki).
 
