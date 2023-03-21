@@ -1,5 +1,5 @@
 default:
   endpoint: "/task"
-  custom_function: "custom_function.R"
+  compute_function: "compute_function.R"
   port: 8000
   output: "data"

@@ -7,12 +7,12 @@ library(RestRserve)
 # Load configuration
 config <- config::get()
 endpoint <- config$endpoint # URL path
-custom_function <- config$custom_function # Filepath of custom function
+compute_function <- config$compute_function # Filepath of compute function
 port <- config$port # Port for server operation
 output <- config$output # Directory for storing generated data
 
 # Function file
-source(custom_function)
+source(compute_function)
 
 # Create a new application with CORS middleware
 application <- Application$new(
@@ -54,9 +54,9 @@ handler <- function(.req, .res) {
   # Extract parameters from the body of the request
   parameters <- .req$parameters_query
 
-  # Run the custom function
-  log_debug("Running custom function...", namespace = "server")
-  result <- custom_function(parameters)
+  # Run the compute function
+  log_debug("Running compute function...", namespace = "server")
+  result <- compute_function(parameters)
 
   # Configure the response body
   .res$set_body(toJSON(result))
