@@ -32,6 +32,8 @@ Parameters for the R server must be configured inside `config.yml`:
 
 The `compute_function` function must be implemented within `compute_function.R`. This function accepts one parameter, `request_data`, which will always contain the contents of a request sent to the server. The function can return any style of parameters, and these parameters will be packaged into the body of a response to the task.
 
+To build and start the containers, run `docker compose up --build` after completing the steps listed above.
+
 ---
 
 <img src="Burgess_etal_CNS_2023_Poster.png">
