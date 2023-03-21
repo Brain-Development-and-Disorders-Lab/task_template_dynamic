@@ -10,7 +10,7 @@ authors:
   given-names: "Peter"
 - family-names: "Richards"
   given-names: "Linda J."
-title: "Dynamic Cognitive Task Server Template"
+title: "Realizing Dynamic Cognitive Tasks with Cloud-based Computation"
 version: 1.0.0
 date-released: 2023-03-16
 url: "https://github.com/Brain-Development-and-Disorders-Lab/task_template_dynamic"

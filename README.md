@@ -2,8 +2,6 @@
 
 > How can we expand the computational capabilities of online cognitive tasks to realize dynamic task behavior?
 
-<img src="Burgess_etal_CNS_2023_Poster.png">
-
 This repository implements a containerized 'template' of an architecture that defers advanced computations from an online cognitive task to a cloud server configured to perform these computations.
 
 Comprehensive documentation describing how to customize and deploy this template can be found in the [wiki](https://github.com/Brain-Development-and-Disorders-Lab/task_template_dynamic/wiki).
@@ -33,6 +31,10 @@ Parameters for the R server must be configured inside `config.yml`:
 - `output`: Local path where logs and participant data will be stored. Directory will be created if it doesn't exist.
 
 The `compute_function` function must be implemented within `compute_function.R`. This function accepts one parameter, `request_data`, which will always contain the contents of a request sent to the server. The function can return any style of parameters, and these parameters will be packaged into the body of a response to the task.
+
+---
+
+<img src="Burgess_etal_CNS_2023_Poster.png">
 
 ---
 
