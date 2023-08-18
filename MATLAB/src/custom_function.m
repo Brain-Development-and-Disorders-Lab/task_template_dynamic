@@ -1,4 +1,4 @@
-function output = compute_function(id, args)
+function output = custom_function(a, b)
     % Include custom implementation here
     fprintf("Computing output of function...\n")
-    output = [id, args];
+    output = a + b;
