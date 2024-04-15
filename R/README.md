@@ -11,3 +11,5 @@ This example utilizes `rpy2` for intercommunication between Python and R.
 - `flask_cors`
 
 Optionally, `pandas` or a similar library should be included for translating data structures between Python and R.
+
+To start the server, run `python3 run.py`.
